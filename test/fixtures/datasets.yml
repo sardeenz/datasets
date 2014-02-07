@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  frequency: MyString
+  system: MyString
+  format: MyString
+  url: MyString
+  notes: MyString
+
+two:
+  name: MyString
+  frequency: MyString
+  system: MyString
+  format: MyString
+  url: MyString
+  notes: MyString

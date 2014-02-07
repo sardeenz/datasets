@@ -1,0 +1,37 @@
+<h1>Listing datasets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Frequency</th>
+      <th>System</th>
+      <th>Format</th>
+      <th>Url</th>
+      <th>Notes</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @datasets.each do |dataset| %>
+      <tr>
+        <td><%= dataset.name %></td>
+        <td><%= dataset.frequency %></td>
+        <td><%= dataset.system %></td>
+        <td><%= dataset.format %></td>
+        <td><%= dataset.url %></td>
+        <td><%= dataset.notes %></td>
+        <td><%= link_to 'Show', dataset %></td>
+        <td><%= link_to 'Edit', edit_dataset_path(dataset) %></td>
+        <td><%= link_to 'Destroy', dataset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dataset', new_dataset_path %>

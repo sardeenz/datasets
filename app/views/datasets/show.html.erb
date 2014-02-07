@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dataset.name %>
+</p>
+
+<p>
+  <strong>Frequency:</strong>
+  <%= @dataset.frequency %>
+</p>
+
+<p>
+  <strong>System:</strong>
+  <%= @dataset.system %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @dataset.format %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @dataset.url %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @dataset.notes %>
+</p>
+
+<%= link_to 'Edit', edit_dataset_path(@dataset) %> |
+<%= link_to 'Back', datasets_path %>
